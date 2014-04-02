@@ -24,7 +24,7 @@ var www = "./www/"
     , srcTemplates = "./app/templates/"
     , srcLibs = "./app/libs/"
     , srcComponents = "./app/components/"
-    , srcSass = "./sass/";
+    , srcSass = "./app/sass/";
 
 
 // Gulp default run and watch command
@@ -57,11 +57,11 @@ gulp.task('sass', function() {
     return gulp.src(srcSass+'*.scss')
         .pipe(compass({
             config_file: srcSass+'config.rb'
-          , css: '/www/css'
-          , sass: 'sass'
+          , css: './www/css'
+          , sass: '/app/sass'
         }))
         //.pipe(minifyCSS())
-       
+       .pipe(gulp.dest('./www/css'));
 });
 
 
