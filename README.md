@@ -8,7 +8,7 @@ Bodie Leonard [bodie.dev@gmail.com](bodie.dev@gmail.com)
 
 Dependencies
 ---
- - [Nodejs](http://nodejs.org/)
+ - [Node Package Manager](https://www.npmjs.org/)
  - [SASS](http://sass-lang.com/)
  - [Compass](http://compass-style.org/)
 
