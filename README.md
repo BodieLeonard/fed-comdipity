@@ -1,7 +1,7 @@
 FED-Comdipity
 =============
 
-Everything a FED needs when converting a comp into serendipity. This system allows the FED to build quick prototypes to prod by breaking comps into modules. 
+Everything a FED needs when converting a comp into serendipity. This system allows the FED to build quick prototypes to prod by breaking comps into modules. No framework needed.
 
 ###Developer
 Bodie Leonard [bodie.dev@gmail.com](bodie.dev@gmail.com)
@@ -12,7 +12,7 @@ Dependencies
  - [SASS](http://sass-lang.com/)
  - [Compass](http://compass-style.org/)
 
-Frameworks
+Libraries
 ---
  - [bootstrap](http://getbootstrap.com/) (js and css)
  - [jQuery](http://jquery.com/)
@@ -29,7 +29,7 @@ Get Started
  - Create new html components within /app/components/
  - Develop templates within /app/templates/ and include components into the templates as needed
  - Create javascript methods within the /app/scripts/app.js or create new js files in /app/scrips
- - To build open terminal and cd into this directory to the location of the gulpfile.js
+ - To build open terminal and cd into this directory where the gulpfile.js is located
  - Run this command
 ```bash
 	gulp
