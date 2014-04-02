@@ -53,26 +53,15 @@ gulp.task('build', function(){
 });
 
 // Compile sass and compass then output into the css dir
-/*gulp.task('sass', function() {
-  return gulp.src(srcSass+'*.scss')
-      .pipe(compass({
-          config_file: srcSass+'config.rb'
-        , css: 'stylesheets'
-        , sass: 'sass'
-      }))
-      .pipe(gulp.dest(www+"css"))
-      .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-});*/
-
 gulp.task('sass', function() {
     return gulp.src(srcSass+'*.scss')
         .pipe(compass({
             config_file: srcSass+'config.rb'
-          , css: 'css'
+          , css: '/www/css'
           , sass: 'sass'
         }))
         //.pipe(minifyCSS())
-        .pipe(gulp.dest(www+"css"));
+       
 });
 
 
